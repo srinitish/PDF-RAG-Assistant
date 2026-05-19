@@ -5,6 +5,4 @@ sentence-transformers
 pypdf
 streamlit
 groq
-python-dotenv
-tqdm
 numpy
