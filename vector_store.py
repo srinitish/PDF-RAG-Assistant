@@ -33,13 +33,4 @@ class VectorStore:
         )
 
 
-    def search(self, query, k=3):
-
-        query_embedding = self.embedding_model.embed([query])[0]
-
-        results = self.collection.query(
-            query_embeddings=[query_embedding],
-            n_results=k
-        )
-
-        return results["documents"][0]
+   
